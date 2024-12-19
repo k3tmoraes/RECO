@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="nav-bar">
+
+
+            <img src="Group 7.svg" alt="">
+            <button class="button-normal" id="botaoCadastrar" onclick="cadastrar()">Cadastrar</button>
+            <button class="button-normal" id="botaoEditar" onclick="editar()">Editar</button>
+            <button class="button-normal" id="botaoDeletar" onclick="deletar()">Deletar</button>
+            <button class="button-normal" id="botaoListar" onclick="listar()">Listar</button>
+
+        </div>
+
+        <div id="cadastro" style="display: block;">
+
+            <div class="cadast">
+                <div class="rest">
+
+                    <label for="username">Nome do usuário</label> <br>
+                    <input type="text" id="usernameINPT" placeholder="Nome do usuário"> <br><br> <br>
+                    <label for="password">Senha do usuário</label> <br>
+                    <input type="password" id="passwordINPT" placeholder="Digite a senha do usuário"><br><br> <br>
+                    <label for="e-mail do Usuario">E-mail do usuário</label> <br>
+                    <input type="text" id="emailINPT" placeholder="Digite o e-mail do usuario"> <br><br> <br>
+                    <div class="buttonCad">
+                    </div>
+                    <button onclick="cadastroUsuario()">cadastrar</button>
+
+                </div>
+            </div>
+
+
+            <div class="logo">
+                <img src="logo2.svg" alt="">
+            </div>
+
+        </div>
+
+        <div id="editar" style="display: none;">
+
+            <div class="cadast">
+                <div class="rest">
+                    <label for="editUsernameINPT">Nome do usuário</label> <br>
+                    <input type="text" id="editUsernameINPT" placeholder="Nome do usuário"> <br><br> <br>
+                    <label for="editPasswordINPT">Senha do usuário</label> <br>
+                    <input type="password" id="editPasswordINPT" placeholder="Digite a senha do usuário"> <br> <br> <br>
+                    <label for="editEmailINPT">E-mail do usuário</label> <br>
+                    <input type="text" id="editEmailINPT" placeholder="Digite o e-mail do usuario"> <br><br> <br>
+                    <div class="buttonCad">
+                    </div>
+                    <button onclick="buscarUsuario()">Buscar</button>
+                    <button onclick="editarUsuario()">Editar</button>
+
+                </div>
+            </div>
+
+
+            <div class="logo">
+                <img src="logo2.svg" alt="">
+            </div>
+
+        </div>
+
+        <div id="deletar" style="display: none;">
+            <div class="cadast">
+                <div class="rest">
+                    <label for="DELemailINPT">E-mail do usuário</label> <br>
+                    <input type="text" id="DELemailINPT" placeholder="Digite o e-mail do usuario"> <br><br> <br>
+                    <div class="buttonCad">
+                    </div>
+                    <button onclick="deletarUsuario()">Deletar</button>
+                </div>
+            </div>
+
+
+            <div class="logo2">
+                <img src="logo2.svg" alt="">
+            </div>
+
+        </div>
+        <div id="listar" style="display: none;">
+        </div>
+    </div>
+
+    <script src="file.js"></script>
+
+</body>
+
+</html>
